@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# wordle-solver
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/32311654/182776739-c0374a53-0c19-45f0-bc45-c83f375d633e.png)
 
-## Available Scripts
+Link to production hosted on Heroku: [wordle-solver](https://wordle-solver-abanuelo.herokuapp.com/).
 
-In the project directory, you can run:
+## Background
 
-### `npm start`
+I am learning how to work with the MERN stack in this project: (MongoDB - DB, Express + Node.js - backend, react - frontend). Instead of serving a backend as intended in the MERN stack, I use MongoDB Atlas to make the app serverless. This app is serverless with exposed endpoints from MongoDB Atlas to serve requests. DB contains total of 10,000+ valid wordle words uploaded and parsed into documents inside a `wordle_words` collecton.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The inspiration in creating this app is my love of [Wordle](https://www.nytimes.com/games/wordle/index.html). Go do yours now if you haven't done so already!!! I was wondering if you could create a system that could filter all possible, next best searches based on your current guesses.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+More updates to come 😁❤️ namely:
+- Can we do a pronoun wordle by filtering 5 letter words via Wikipedia API? 🤔
+- Can we scrape the actual Wordle site and enter our intial guess and devise a system to automatically solve it? 🤔
+- Can we get user input and make this a valid game of wordle but provide suggested hints? (kinda defeats the purpose though...) 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
